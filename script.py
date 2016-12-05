@@ -18,11 +18,11 @@ Itr, Ltr, Ite, Lte = ds.load_CIFAR10()
 
 
 print (Itr.shape, Ltr.shape, Ite.shape)
-# 
+#  
 # Itr=Itr[:100,:]
 # Ltr=Ltr[:100]
 # 
-# print (Itr.shape, Ltr.shape, Ite.shape)
+print (Itr.shape, Ltr.shape, Ite.shape)
 
 #image=ARR['data'][5]
 # im = numpy.reshape(image, (32,32,3), order='F')
