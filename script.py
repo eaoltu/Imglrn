@@ -4,7 +4,7 @@ Created on Dec 1, 2016
 @author: eao
 '''
 import numpy as np
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 from NearestNeighbor import *
 
 print("Hello World:)\n")
