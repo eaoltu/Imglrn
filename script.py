@@ -31,7 +31,7 @@ print (Itr.shape, Ltr.shape, Ite.shape)
 
 nn = NearestNeighborClass() # create a Nearest Neighbor classifier class
 nn.train(Itr, Ltr) # train the classifier on the training images and labels
-Lte_predict = nn.predictL1(Ite) # predict labels on the test images
+Lte_predict = nn.predictL2(Ite) # predict labels on the test images
 # and now print the classification accuracy, which is the average number
 # of examples that are correctly predicted (i.e. label matches)
 print 'accuracy: %f' % ( np.mean(Lte_predict == Lte) )
