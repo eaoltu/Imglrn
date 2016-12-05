@@ -28,10 +28,15 @@ class DataSet(object):
     def load_CIFAR10(self):
         #set the path to dataset directory
 
-        cwd_path = os.getcwd()
-        #print (cwd_path)
+        #cwd_path = os.getcwd()
+        cwd_path=os.path.abspath(os.curdir)
+        print (cwd_path)
+        os.chdir("..")
+        cwd_path=os.path.abspath(os.curdir)
+        print (cwd_path)
+        
         cifar10dir=cwd_path+"/Datasets/cifar-10-batches-py/"
-        #print (cifar10dir)
+        print (cifar10dir)
         name1="data_batch_1"
         name2="data_batch_2"
         name3="data_batch_3"
