@@ -44,6 +44,7 @@ class NearestNeighborClass(object):
         num_test = X.shape[0]
         # lets make sure that the output type matches the input type
         Ypred = np.zeros(num_test, dtype = self.ytr.dtype)
+        bar = progressbar.ProgressBar(maxval=num_test, widgets=[progressbar.Bar('=', '[', ']'), ' ', progressbar.Percentage()]).start()
 
         # loop over all test rows
         for i in xrange(num_test):
@@ -53,6 +54,8 @@ class NearestNeighborClass(object):
             
             min_index = np.argmin(distances) # get the index with smallest distance
             Ypred[i] = self.ytr[min_index] # predict the label of the nearest example
+            bar.update(i+1)
+        bar.finish()
 
         return Ypred
 
