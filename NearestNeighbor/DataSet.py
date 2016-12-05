@@ -64,11 +64,10 @@ class DataSet(object):
         X7=self.unpickle(file_name7)
         
         
-        
-#         Itr=numpy.concatenate((X1['data'], X2['data'], X3['data'], X4['data'], X5['data']), axis=0)
-#         Ltr=numpy.concatenate((X1['labels'], X2['labels'], X3['labels'], X4['labels'], X5['labels']), axis=0)
-        Itr=numpy.concatenate((X1['data'], X2['data']), axis=0)
-        Ltr=numpy.concatenate((X1['labels'], X2['labels']), axis=0)
+        Itr=numpy.concatenate((X1['data'], X2['data'], X3['data'], X4['data'], X5['data']), axis=0)
+        Ltr=numpy.concatenate((X1['labels'], X2['labels'], X3['labels'], X4['labels'], X5['labels']), axis=0)
+#        Itr=numpy.concatenate((X1['data'], X2['data']), axis=0)
+#        Ltr=numpy.concatenate((X1['labels'], X2['labels']), axis=0)
         Ite=X6['data']
         Lte=X6['labels']
 #          Itr=0

@@ -1,8 +1,3 @@
-#Xtr, Ytr, Xte, Yte = ds.load_CIFAR10() 
-#image=ARR['data']
-Itr_rows = Itr.reshape(Itr.shape[0], 32 * 32 * 3)
-Ite_rows = Ite.reshape(Ite.shape[0], 32 * 32 * 3)
-print (Itr.shape, Ltr.shape)
 #image=ARR['data'][5]
 # im = numpy.reshape(image, (32,32,3), order='F')
 #im = image.reshape(3,32,32).transpose(1,2,0)
